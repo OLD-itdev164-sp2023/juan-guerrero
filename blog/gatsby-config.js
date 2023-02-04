@@ -18,7 +18,6 @@ module.exports = {
       company: `Blogs Inc.`,
       address: `PO Box 1234`
     }
-    
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -28,6 +27,13 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`, 
       },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ll4bs2qtq12y`,
+        accessToken: `xT3By1GPn5PLsc4e9UAPvAI5UbYtPTSmnAYvIHvUTD0`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
