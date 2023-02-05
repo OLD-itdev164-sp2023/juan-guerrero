@@ -29,7 +29,6 @@ module.exports = {
       },
     },
 
-[
   {
     resolve: `gatsby-source-contentful`,
     options: {
@@ -37,7 +36,6 @@ module.exports = {
       accessToken: `xT3By1GPn5PLsc4e9UAPvAI5UbYtPTSmnAYvIHvUTD0`,
     },
   },
-]
 
 
     `gatsby-transformer-sharp`,
