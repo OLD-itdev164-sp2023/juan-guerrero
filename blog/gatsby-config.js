@@ -5,45 +5,44 @@
  */
 
 /**
- */ @type {import('gatsby').GatsbyConfig}
- //
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
-  siteMetadata: {
+    siteMetadata: {
     title: `Gatsby Blog`,
     description: `ITDEV-164 Gatsby Blog`,
     author: `Juan Guerrero`,
     siteUrl:`https://gatsbystarterdefaultsource.gatsbyjs.oi/`,
     contact: {
-      name: `Juan Guerrero`,
-      company: `Blogs Inc.`,
-      address: `PO Box 1234`
+        name: `Juan Guerrero`,
+        company: `Blogs Inc.`,
+        address: `PO Box 1234`
     }
-  },
-  plugins: [
+    },
+    plugins: [
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
+        resolve: `gatsby-source-filesystem`,
+        options: {
         name: `images`,
         path: `${__dirname}/src/images`, 
-      },
+        },
     },
 
-  {
+    {
     resolve: `gatsby-source-contentful`,
     options: {
-      spaceId: `ll4bs2qtq12y`,
-      accessToken: `xT3By1GPn5PLsc4e9UAPvAI5UbYtPTSmnAYvIHvUTD0`,
-      environment: `public`,
+        spaceId: `ll4bs2qtq12y`,
+        accessToken: `xT3By1GPn5PLsc4e9UAPvAI5UbYtPTSmnAYvIHvUTD0`,
     },
-  },
+},
 
 
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
+        resolve: `gatsby-plugin-manifest`,
+        options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
@@ -53,7 +52,7 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-  ],
+            },
+        },
+    ],
 }
