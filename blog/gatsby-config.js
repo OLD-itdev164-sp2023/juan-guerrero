@@ -5,8 +5,8 @@
  */
 
 /**
- * @type {import('gatsby').GatsbyConfig}
- */
+ */ @type {import('gatsby').GatsbyConfig}
+ //
 module.exports = {
   siteMetadata: {
     title: `Gatsby Blog`,
@@ -34,6 +34,7 @@ module.exports = {
     options: {
       spaceId: `ll4bs2qtq12y`,
       accessToken: `xT3By1GPn5PLsc4e9UAPvAI5UbYtPTSmnAYvIHvUTD0`,
+      environment: `public`,
     },
   },
 
@@ -54,6 +55,5 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-image`,
   ],
 }
