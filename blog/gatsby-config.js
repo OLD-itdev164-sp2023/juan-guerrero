@@ -7,6 +7,12 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`
+})
+
+
 module.exports = {
     siteMetadata: {
     title: `Gatsby Blog`,
@@ -32,14 +38,15 @@ module.exports = {
     {
     resolve: `gatsby-source-contentful`,
     options: {
-        spaceId: `ll4bs2qtq12y`,
-        accessToken: `xT3By1GPn5PLsc4e9UAPvAI5UbYtPTSmnAYvIHvUTD0`,
-    },
+    spaceId: `${process.env.SPACE_ID}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`
+    }
 },
 
-
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sharp`,   
+    
     {
         resolve: `gatsby-plugin-manifest`,
         options: {
