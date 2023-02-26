@@ -34,7 +34,7 @@ module.exports = {
     options: {
         spaceId: `ll4bs2qtq12y`,
         accessToken: `xT3By1GPn5PLsc4e9UAPvAI5UbYtPTSmnAYvIHvUTD0`,
-    },
+    }
 },
 
 
