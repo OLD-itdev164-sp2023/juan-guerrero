@@ -28,3 +28,6 @@ query blogPostQuery($slug: String!) {
     }
 }
 `
+
+
+
