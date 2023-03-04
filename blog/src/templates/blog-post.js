@@ -28,3 +28,7 @@ query blogPostQuery($slug: String!) {
     }
 }
 `
+
+
+
+gedjwebkdjhwiuehasnklasc
