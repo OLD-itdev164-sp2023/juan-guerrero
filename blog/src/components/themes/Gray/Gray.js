@@ -2,4 +2,4 @@ const theme = {
     header: { backgroundColor: '#555'}
 }
 
-export { theme as Gray }sdfsdf
+export { theme as Gray }
