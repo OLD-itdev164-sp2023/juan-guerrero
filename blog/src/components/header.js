@@ -14,7 +14,7 @@ const Outer = styled.header`
 `
 
 const H1 = styled.h1`
-  margin: 0px; huidshfd
+  margin: 0px; 
 `
 
 const StyledLink = styled(Link)`
