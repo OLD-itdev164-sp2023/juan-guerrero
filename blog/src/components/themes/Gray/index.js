@@ -1,1 +1,1 @@
-export { Gray } from './Gray'zxczxczx
+export { Gray } from './Gray'
